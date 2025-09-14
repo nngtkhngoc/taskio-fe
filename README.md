@@ -1,16 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/YHSq4TPZ)
 
-# To-Do App – Preliminary Assignment Submission
-
-⚠️ **Complete all sections marked with ✍️** — required for submission.
-
-👀 Check **ASSIGNMENT.md** in this repository for assignment requirements.
-
----
+# Taskio
 
 ## 🚀 Project Setup & Usage
-
-**How to install and run your project:**  
 
 ```bash
 # Clone repo
@@ -228,34 +220,3 @@ model level {
 }
 ```
 
----
-
-## 🧠 Reflection
-
-### a. If you had more time, what would you expand?
-
-**Purpose**: Enhance engagement, retention, and overall productivity, while making Taskio more social and adaptive.  
-
-**Planned expansions**:  
-- Advanced gamification: rewards, achievement tiers, personalized progress tracking.  
-- Calendar integration (Google Calendar) for task sync.  
-- Social features: friend connections, study group rooms, collaborative project management.  
-- AI-driven analytics for task suggestions and optimized prioritization.
-
-### b. If you integrate AI APIs
-
-**Purpose**: Smarter task management, predictive insights, and personalized recommendations.  
-
-**Potential features**:  
-- Predictive deadline alerts.  
-- Smart task prioritization suggestions.  
-- AI-powered scheduling assistant.  
-- Behavioral analytics for productivity insights.
-
----
-
-## ✅ Checklist
-
-- [x] Code executes without errors  
-- [x] Core functionality implemented (add/edit/delete/complete tasks)  
-- [x] All required sections completed
