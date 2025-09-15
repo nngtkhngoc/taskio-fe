@@ -179,7 +179,7 @@ export const MatrixQuadrant: React.FC<MatrixQuadrantProps> = ({
           </DialogTrigger>
           {/* Dialog */}
           {showDialog && (
-            <DialogContent className="sm:max-w-[425px]  max-h-[90vh] overflow-y-auto scrollbar-hide">
+            <DialogContent className="sm:max-w-[435px] max-h-[90vh] overflow-y-auto scrollbar-hide">
               <DialogHeader>
                 <DialogTitle>Task List - {title}</DialogTitle>
                 <DialogDescription>
@@ -193,7 +193,7 @@ export const MatrixQuadrant: React.FC<MatrixQuadrantProps> = ({
                 {/* Date Filter */}
                 <div className="flex flex-row gap-2 mb-4 w-9/10">
                   <Popover>
-                    <div className="flex flex-col w-1/2 gap-1">
+                    <div className="flex flex-col gap-1">
                       <span className="text-sm font-bold">From: </span>
                       <PopoverTrigger asChild>
                         <Button
@@ -237,7 +237,7 @@ export const MatrixQuadrant: React.FC<MatrixQuadrantProps> = ({
                   </Popover>
 
                   <Popover>
-                    <div className="flex flex-col w-1/2 gap-1">
+                    <div className="flex flex-col gap-1">
                       <span className="text-sm font-bold">To: </span>
                       <PopoverTrigger asChild>
                         <Button
