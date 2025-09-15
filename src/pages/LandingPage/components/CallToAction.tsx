@@ -2,8 +2,13 @@ import { InteractiveGridPattern } from "@/components/ui/interactive-grid-pattern
 import { Button } from "@/components/ui/button";
 
 import { ArrowRight } from "lucide-react";
+import { useUser } from "@/hooks/useUser";
+import { useNavigate } from "react-router";
 
 export const CallToAction = () => {
+  const { data: user } = useUser();
+  const nav = useNavigate();
+
   return (
     <div className="relative flex flex-col gap-6 items-center justify-center py-20 px-5">
       <InteractiveGridPattern squaresClassName="hover:fill-blue-200/30" />
@@ -28,7 +33,15 @@ export const CallToAction = () => {
       </p>
       {/* CTA Button */}
       <div className="z-50" data-aos="zoom-in">
-        <Button>
+        <Button
+          onClick={() => {
+            if (user) {
+              nav("/dashboard");
+            } else {
+              nav("/authenticate");
+            }
+          }}
+        >
           <span>Try Now (Free)</span>
           <ArrowRight className="w-5 h-5" />
         </Button>
