@@ -2,10 +2,15 @@ import { InteractiveGridPattern } from "@/components/ui/interactive-grid-pattern
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { Button } from "@/components/ui/button";
 import Marquee from "@/components/ui/marquee";
+import { useUser } from "@/hooks/useUser";
 
 import { ArrowRight, Play, Sparkle, Star } from "lucide-react";
+import { useNavigate } from "react-router";
 
 export const HeroSection = () => {
+  const { data: user } = useUser();
+  const nav = useNavigate();
+
   const marqueeText = [
     "Fast & simple task manager 📚",
     "Track your progress 📊",
@@ -37,7 +42,16 @@ export const HeroSection = () => {
         </p>
 
         <div className="flex flex-row gap-4 sm:flex-row z-10">
-          <Button variant="noShadow">
+          <Button
+            variant="noShadow"
+            onClick={() => {
+              if (user) {
+                nav("/dashboard");
+              } else {
+                nav("/authenticate");
+              }
+            }}
+          >
             <ArrowRight />
             Get Started
           </Button>
