@@ -174,7 +174,7 @@ export const AddNewTask = () => {
 
   const handleToggleCompleted = (id: string, checked: boolean) => {
     setSubtasks(
-      subtasks.map((s) => (s.id === id ? { ...s, completed: checked } : s))
+      subtasks.map((s) => (s.id === id ? { ...s, is_completed: checked } : s))
     );
   };
 
@@ -377,7 +377,7 @@ export const AddNewTask = () => {
                   <DialogHeader>
                     <DialogTitle>Add New Task</DialogTitle>
                     <DialogDescription>
-                      Fill in the details of your task. Description is optional.
+                      Fill in the details of your task.
                     </DialogDescription>
                   </DialogHeader>
 
