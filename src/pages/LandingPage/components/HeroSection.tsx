@@ -55,10 +55,12 @@ export const HeroSection = () => {
             <ArrowRight />
             Get Started
           </Button>
-          <Button variant="oppositeNoShadow">
-            <Play />
-            Watch Demo
-          </Button>
+          <a href="https://youtu.be/QIm80i_GbEE" target="_blank">
+            <Button variant="oppositeNoShadow">
+              <Play />
+              Watch Demo
+            </Button>
+          </a>
         </div>
       </div>
 
