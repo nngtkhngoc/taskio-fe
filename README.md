@@ -32,19 +32,6 @@ npm run preview
 
 ---
 
-## 🎥 Demo Video
-
-**Demo video link (≤ 2 minutes):**  
-
-📌 **Video Upload Guideline**: Set visibility to **Unlisted** on YouTube.  
-- Can only be viewed by users with the link.  
-- Won’t appear in search or on your channel.  
-- Share the link in README so mentors can access it.  
-
-✍️ [Paste your video link here]
-
----
-
 ## 💻 Project Introduction
 
 ### a. Overview
